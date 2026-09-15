@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Appointment | Aalok Healthcare Ltd</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .page-header { background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: white; padding: 80px 0; }
+        footer { background: #0f172a; color: #94a3b8; }
+        footer a { color: #cbd5e1; text-decoration: none; }
+        footer a:hover { color: #38bdf8; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="bg-dark text-white py-2" style="font-size: 0.875rem;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div><i class="fa-solid fa-phone me-2 text-primary"></i>Hotline: 10672 / 09610 100999</div>
+            <div><i class="fa-solid fa-envelope me-2 text-primary"></i>aalokbd195@gmail.com</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-3" href="index.html">
+                <i class="fa-solid fa-heart-pulse text-danger me-2"></i>AALOK <span class="text-dark">Healthcare</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Find a Doctor</a></li>
+                    <li class="nav-item"><a class="nav-link active text-primary" href="contact.html">Contact Us</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary rounded-pill px-4 ms-lg-3">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold display-4">Contact & Appointment</h1>
+            <p class="lead">Get in touch with us or book doctor appointments online</p>
+        </div>
+    </header>
+
+    <!-- Contact & Booking Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Appointment Form -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h3 class="fw-bold mb-4">Book an Appointment</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" placeholder="01XXXXXXXXX" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Select Branch</label>
+                                    <select class="form-select">
+                                        <option>Mirpur-10 (Head Office)</option>
+                                        <option>Mirpur-1 Branch</option>
+                                        <option>Pallabi Branch</option>
+                                        <option>Kochukhet Branch</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Preferred Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Select Department / Doctor</label>
+                                    <select class="form-select">
+                                        <option>General Medicine</option>
+                                        <option>Cardiology / Heart</option>
+                                        <option>Gynecology & Obstetrics</option>
+                                        <option>Pediatrics (Child Care)</option>
+                                        <option>Diagnostic Test Booking</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Additional Message (Optional)</label>
+                                    <textarea class="form-control" rows="4" placeholder="Mention any specific problems or notes..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary rounded-pill px-5 py-2">Submit Appointment Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Branch Contact Details -->
+                <div class="col-lg-5">
+                    <h3 class="fw-bold mb-4">Our Branch Info</h3>
+                    <div class="accordion" id="branchAccordion">
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#branch1">
+                                    <i class="fa-solid fa-hospital me-2 text-primary"></i> Mirpur-10 (Head Office)
+                                </button>
+                            </h2>
+                            <div id="branch1" class="accordion-collapse collapse show" data-bs-parent="#branchAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-1"><strong>Address:</strong> House #1 & 3, Road-2, Block-B, Mirpur-10, Dhaka-1216</p>
+                                    <p class="mb-1"><strong>Hotline:</strong> 10672, 09610 100999</p>
+                                    <p class="mb-0"><strong>Hours:</strong> 7:00 AM - 11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#branch2">
+                                    <i class="fa-solid fa-hospital me-2 text-primary"></i> Mirpur-1 Branch
+                                </button>
+                            </h2>
+                            <div id="branch2" class="accordion-collapse collapse" data-bs-parent="#branchAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-1"><strong>Address:</strong> 21 Darus Salam Road, Mirpur-1, Dhaka</p>
+                                    <p class="mb-1"><strong>Hotline:</strong> 10672, 09610 100999</p>
+                                    <p class="mb-0"><strong>Email:</strong> aalokbd195@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#branch3">
+                                    <i class="fa-solid fa-hospital me-2 text-primary"></i> Pallabi Branch
+                                </button>
+                            </h2>
+                            <div id="branch3" class="accordion-collapse collapse" data-bs-parent="#branchAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-1"><strong>Address:</strong> 2/6 Pallabi, Mirpur (11-1/2), Dhaka</p>
+                                    <p class="mb-0"><strong>Hotline:</strong> 10672, 09610 100999</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container text-center">
+            <p>&copy; 2026 Aalok Healthcare Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

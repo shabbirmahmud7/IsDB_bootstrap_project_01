@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Doctor | Aalok Healthcare Ltd</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .page-header { 
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1600&q=80'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+            padding: 80px 0; 
+        }
+        footer { background: #0f172a; color: #94a3b8; }
+        footer a { color: #cbd5e1; text-decoration: none; }
+        footer a:hover { color: #38bdf8; }
+
+       
+        .doctor-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="bg-dark text-white py-2" style="font-size: 0.875rem;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div><i class="fa-solid fa-phone me-2 text-primary"></i>Hotline: 10672 / 09610 100999</div>
+            <div><i class="fa-solid fa-envelope me-2 text-primary"></i>aalokbd195@gmail.com</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-3" href="index.html">
+                <i class="fa-solid fa-heart-pulse text-danger me-2"></i>AALOK <span class="text-dark">Healthcare</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active text-primary" href="doctors.html">Find a Doctor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary rounded-pill px-4 ms-lg-3">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold display-4">Our Specialist Doctors</h1>
+            <p class="lead">Consult with top medical experts across various specialties</p>
+        </div>
+    </header>
+
+    <!-- Filter & Search Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="card p-3 shadow-sm border-0">
+                <div class="row g-3">
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Search doctor by name...">
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select">
+                            <option selected>All Specialties</option>
+                            <option>Medicine Specialist</option>
+                            <option>Pediatrics (Child)</option>
+                            <option>Gynecology & Obstetrics</option>
+                            <option>Cardiology / Heart</option>
+                            <option>Orthopedics</option>
+                            <option>Nephrology (Kidney)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-primary w-100"><i class="fa-solid fa-magnifying-glass me-2"></i>Filter Doctors</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors List Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Doctor Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=300&q=80" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Prof. Dr. A K M Musa</h5>
+                            <span class="badge bg-primary mb-2">Medicine Specialist</span>
+                            <p class="small text-muted mb-2">MBBS, FCPS, MCPS, DTCD, FACP (Gold Medalist)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-10</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 5:30 PM - 10:00 PM (Thu Off)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=300&q=80" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Assoc. Prof. Dr. Shamsun Nahar</h5>
+                            <span class="badge bg-success mb-2">Gynecology</span>
+                            <p class="small text-muted mb-2">MBBS, FCPS, MCPS (Gynae and Obs)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-1</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 7:00 PM - 9:00 PM (Fri Off)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=300&q=80" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Prof. Dr. Uttam Karmaker</h5>
+                            <span class="badge bg-info mb-2">Kidney / Nephrology</span>
+                            <p class="small text-muted mb-2">MBBS, MRCS, MS (Dhaka Medical College)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-1</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 7:00 PM - 8:30 PM (Sat-Tue)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd card part --> 
+
+                <div class="row g-4">
+                
+                <!-- Doctor Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Prof. Dr. A K M Musa</h5>
+                            <span class="badge bg-primary mb-2">Medicine Specialist</span>
+                            <p class="small text-muted mb-2">MBBS, FCPS, MCPS, DTCD, FACP (Gold Medalist)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-10</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 5:30 PM - 10:00 PM (Thu Off)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1757125736482-328a3cdd9743?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Assoc. Prof. Dr. Shamsun Nahar</h5>
+                            <span class="badge bg-success mb-2">Gynecology</span>
+                            <p class="small text-muted mb-2">MBBS, FCPS, MCPS (Gynae and Obs)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-1</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 7:00 PM - 9:00 PM (Fri Off)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1659353885824-1199aeeebfc6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Prof. Dr. Uttam Karmaker</h5>
+                            <span class="badge bg-info mb-2">Kidney / Nephrology</span>
+                            <p class="small text-muted mb-2">MBBS, MRCS, MS (Dhaka Medical College)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-1</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 7:00 PM - 8:30 PM (Sat-Tue)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+
+
+            <!-- 3rd card part --> 
+
+
+            <div class="row g-4">
+                
+                <!-- Doctor Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1612276529731-4b21494e6d71?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Prof. Dr. A K M Musa</h5>
+                            <span class="badge bg-primary mb-2">Medicine Specialist</span>
+                            <p class="small text-muted mb-2">MBBS, FCPS, MCPS, DTCD, FACP (Gold Medalist)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-10</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 5:30 PM - 10:00 PM (Thu Off)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://plus.unsplash.com/premium_photo-1674499074395-5277fdd707ee?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Assoc. Prof. Dr. Shamsun Nahar</h5>
+                            <span class="badge bg-success mb-2">Gynecology</span>
+                            <p class="small text-muted mb-2">MBBS, FCPS, MCPS (Gynae and Obs)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-1</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 7:00 PM - 9:00 PM (Fri Off)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1678940805884-08edda621b42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGRvY3RvciUyMHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" class="rounded-circle mb-3 doctor-img" alt="Doctor Profile">
+                            <h5 class="fw-bold mb-1">Prof. Dr. Uttam Karmaker</h5>
+                            <span class="badge bg-info mb-2">Kidney / Nephrology</span>
+                            <p class="small text-muted mb-2">MBBS, MRCS, MS (Dhaka Medical College)</p>
+                            <p class="small text-dark fw-semibold mb-1"><i class="fa-solid fa-hospital me-1 text-danger"></i> Aalok Healthcare, Mirpur-1</p>
+                            <p class="small text-muted"><i class="fa-solid fa-clock me-1 text-primary"></i> 7:00 PM - 8:30 PM (Sat-Tue)</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill w-100">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container text-center">
+            <p>&copy; 2026 Aalok Healthcare Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
